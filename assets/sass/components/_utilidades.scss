@@ -1,0 +1,20 @@
+@import "variables";
+
+.img{
+    width: 100%;
+}
+.d-none{
+    display: none ;
+}
+.carrito-num{
+    position: absolute;
+    top: 0;
+    right: 0;background-color: $blanco;
+    padding: .2rem .5rem;
+    border-radius: 50%;
+    color: $negro;
+    font-size: 1rem;
+}
+.modal-dialog-2{
+    max-width: 80rem;
+}

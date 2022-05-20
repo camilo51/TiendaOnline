@@ -1,0 +1,51 @@
+@import "variables";
+
+.header{
+    background-color: $oscuro;
+    color: $blanco;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+
+    &__titulo{
+        font-size: 4.5rem;
+    }
+
+    .navegacion{
+
+        &__contenedor{
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+        &__links{
+            list-style: none;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        &__links--categorias{
+            position: relative;
+        }
+        &__links--carrito{
+            position: relative;
+        }
+        &__subContenedor{
+            padding: 0;
+            position: absolute;
+            background-color: $oscuro;
+            height: 0;
+            overflow: hidden;
+            transition: $transition; 
+        }
+        &__subContenedor--menu{
+            height: 400%;
+        }
+        &__subLinks{
+            @extend .navegacion__links;
+            border-bottom: 1px solid $gris;
+        }
+    }
+}
