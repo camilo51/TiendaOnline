@@ -1,5 +1,5 @@
 import { informacion } from "./inforrmacion.js";
-import { botonesCarrito } from "./ventanaModal.js";
+// import { botonesCarrito } from "./ventanaModal.js";
 
 let producto = {};
 
@@ -8,6 +8,7 @@ const carritoNum = document.querySelector(".carrito-num");
 const modalBody = document.querySelector(".bodyModal");
 const valorTotal = document.querySelector(".valorTotal");
 
+const botonesCarrito = document.querySelectorAll(".articulos__carrito");
 function clickeado() {
   const cantidad = document.querySelector(".cantidad");
 
@@ -57,7 +58,9 @@ for (let i = 0; i < localStorage.length; i++) {
 
   modalBody.innerHTML += `
       <tr>
-        <td class="col-2" scope="row"><img class=" img" src="${imagenProducto}" /></td>
+        <td class="col-2" scope="row"><img class=" img" src="${
+          (location.pathname == '/views/perfil.html') ? '../'+imagenProducto : imagenProducto
+        }" /></td>
         <td class="col-4"><p class="text-center">${nombreProducto}</p></td>
         <td class="col-2"><p class="text-center">${cantidadProducto}</p></td>
         <td class="col-2"><p class="text-center">${precioProducto}</p></td>

@@ -1,4 +1,4 @@
-export const botonesCarrito = document.querySelectorAll(".articulos__carrito");
+const botonesCarrito = document.querySelectorAll(".articulos__carrito");
 const carritoTitulo = document.querySelector(".carrito__titulo");
 const modalBody = document.querySelector(".modal-body");
 const btn = document.querySelector(".enviado");

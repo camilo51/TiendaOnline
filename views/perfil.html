@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Death Shop</title>
+    <title>Perfil</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -18,10 +17,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
-
 <body>
     <header class="header">
         <h1 class="header__titulo">DeATh Shop</h1>
@@ -29,7 +27,7 @@
         <nav class="navegacion">
 
             <ul class="navegacion__contenedor">
-                <li class="navegacion__links"><a href="index.html">Inicio</a></li>
+                <li class="navegacion__links"><a href="../index.html">Inicio</a></li>
                 <li class="navegacion__links navegacion__links--categorias">Categorias <i
                         class="fa-solid fa-caret-down"></i>
                     <ul class="navegacion__subContenedor">
@@ -47,37 +45,7 @@
         </nav>
     </header>
     <section>
-        <img class="img" src="assets/img/banner.webp" alt="Imagen del banner principal">
-    </section>
-
-    <main>
-        <h2 class="articulo__titulo">Articulos</h2>
-        <section class="articulos">
-
-        </section>
-        <section>
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Agregar <span class="carrito__titulo"></span></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body row">
-                            
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-success enviado" data-bs-dismiss="modal">Agregar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            
-            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-2">
                     <div class="modal-content">
@@ -109,11 +77,19 @@
                     </div>
                 </div>
             </div>
+    </section>
+    <main>
+        <div class="perfil" id="particles-js">
+            
+        </div>
+        <section class="car">
+            <h2>Carrito</h2>
+            <div class="cantidad-productos">
+
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados.</p>
-    </footer>
+
 
 
     <!-- Bootstrap -->
@@ -132,13 +108,11 @@
 
     <!-- Scripts -->
     <!-- <script src="assets/js/sesion/sesion.js" type="module"></script> -->
-    <script src="assets/js/infoTarjetas.js" type="module"></script>
-    <script src="assets/js/tarjetas.js" type="module"></script>
-    <script src="assets/js/ventanaModal.js" type="module"></script>
-    <script src="assets/js/categoria.js" type="module"></script>
-    <script src="assets/js/carrito.js" type="module"></script>
-    <script src="assets/js/toastify.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/infoTarjetas.js" type="module"></script>
+    <script src="../assets/js/categoria.js" type="module"></script>
+    <script src="../assets/js/carrito.js" type="module"></script>
+    <script src="../assets/js/perfil.js" type="module"></script>
+    <script src="../assets/js/toastify.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
-
 </html>
